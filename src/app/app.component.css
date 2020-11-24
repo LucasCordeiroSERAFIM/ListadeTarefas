@@ -1,0 +1,10 @@
+small {
+    color: red;
+    font-size: 15px;
+    text-align: center;
+}
+
+fieldset {
+    border-radius: 5px;
+    background-color: #fff;
+}

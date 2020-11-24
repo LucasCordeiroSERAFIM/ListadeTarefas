@@ -1,0 +1,61 @@
+    /* CSS COMO UM TODO */
+    
+    body {
+        height: 100vh;
+        display: flex;
+        /*orisontal*/
+        align-items: center;
+        /*vertical**/
+        justify-content: center;
+        font-family: 'Nerko One', cursive;
+        font-weight: 300;
+        text-align: center;
+        background-image: url("https://static1.bigstockphoto.com/4/1/1/large1500/114184040.jpg");
+    }
+    
+    ul {
+        text-align: left;
+        margin: 10px;
+        padding: 10px;
+        list-style: none;
+        background: #fff;
+        border-radius: 10px;
+    }
+    
+    li {
+        padding: 15px;
+        margin: 10px;
+        font-size: 1em;
+        font-style: italic;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    }
+    
+    .btn {
+        border-radius: 5px;
+        background-color: #fff;
+        font-size: 1em;
+        float: right;
+        opacity: 0.6;
+        transition: opacity 1s;
+    }
+    
+    .btn:hover {
+        opacity: 1;
+        transition: opacity 1s;
+    }
+    
+    h1 {
+        font-family: 'Texturina', serif;
+        color: #fff;
+        font-size: 5em;
+        text-shadow: 3px 5px #000;
+    }
+    
+    label {
+        font-family: 'Texturina', serif;
+        font-size: 30px;
+    }
+    
+    input {
+        font-size: 15px;
+    }

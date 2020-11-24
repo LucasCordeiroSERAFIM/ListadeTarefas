@@ -1,0 +1,22 @@
+<h1>{{title}}</h1>
+<br>
+<!--button (click)="alterarTexto()">Alterar</button-->
+<ul>
+    <p *ngIf="todos.length==0">
+        <small>Você não Possui Tarefas</small>
+    </p>
+    <li *ngFor=" let i of todos">{{i.id}}-){{i.todo}}<button class="btn" *ngIf="!i.done" (click)="markAsDone(i)">Concluir</button>
+        <button class="btn" *ngIf="i.done" (click)="markAsUndone(i)">Refazer</button>
+        <button class="btn" (click)="remover(i)">Remover</button></li>
+</ul>
+
+
+<form [formGroup]="form">
+    <fieldset>
+        <label>Tarefa:</label>
+        <input type="text" placeholder="Nova Tarefa" maxlength="60" formControlName="tarefa">
+        <!--pse ta invalido e se nao foi modificado-->
+        <br><small *ngIf="form.controls.tarefa.invalid  && form.controls.tarefa.pristine">Este Campo deve conter entre 3 e 60 caracteres</small>
+        <br><button [disabled]="form.invalid" (click)="add()">Salvar</button>
+    </fieldset>
+</form>
